@@ -1,28 +1,17 @@
-## Installs
+# Set up neovim config
 
-#### Install package manager
-https://github.com/wbthomason/packer.nvim
+## Install
 
-#### Install NVM (For tsserver and eslint LSPs)
-https://github.com/nvm-sh/nvm
+1. [packer.nvim](https://github.com/wbthomason/packer.nvim)
+2. [NVM](https://github.com/nvm-sh/nvm) (for tsserver and eslint LSP)
+3. [Rust](https://doc.rust-lang.org/cargo/getting-started/installation.html) (for Rust LSP)
+4. [ripgrep](https://github.com/BurntSushi/ripgrep#installation)
 
-#### Install Rust (For rust LSP)
-https://doc.rust-lang.org/cargo/getting-started/installation.html
-
-#### Install ripgrep
-https://github.com/BurntSushi/ripgrep#installation
-
-## Get files
+## Get config files
 1. From the `.config` folder
-2. Run `mkdir nvim`
-3. Run ´cd nvim´
-4. Run `git init`
-5. Run `git remote add -f origin https://github.com/phjorgensen/.dotfiles.git`
-6. Run `git config core.sparseCheckout true`
-7. Run `echo ".config/nvim/" >> .git/info/sparse-checkout`
-8. Run `git pull origin main`
+2. Run `git clone https://github.com/phjorgensen/nvim.git`
 
-### Init
+## Init
 
 1. Start neovim.
 2. Run `:PackerSync` to install all packages.
